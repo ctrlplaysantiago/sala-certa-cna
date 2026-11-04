@@ -3,6 +3,14 @@
 
 Sistema web desenvolvido para organizar a distribuição de turmas, professores e salas da CNA, com um painel administrativo para gerenciamento e uma tela pública otimizada para exibição em TV.
 
+
+## Acesse o projeto
+
+Confira o **Sala Certa CNA** diretamente pelo navegador:
+
+🔗 [Clique aqui para acessar o sistema Sala Certa CNA](https://ctrlplaysantiago.github.io/sala-certa-cna/)
+
+
 ## Funcionalidades
 
 - Cadastro, edição e exclusão de turmas.
