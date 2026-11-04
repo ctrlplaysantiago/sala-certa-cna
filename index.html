@@ -1,1 +1,100 @@
-hello world
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">]
+    <meta name="theme-color" content="#e30635">
+    <meta name="description" content="Painel de gerenciamento e distribuição de turmas e salas da CNA.">
+    <title>Sala Certa CNA | Gerencimento de Turmas</title>
+    <link rel="icon" type="image/svg+xml" href="asset/cna-logo.svg">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#admin" aria-label="Sala Certa CNA">
+        <span class="brand-mark logo-holder">
+         <img src="assets/cna-logo.svg" alta="Logo CNA+">
+        </span>
+        <span>
+          <strong>Sala Certa CNA</strong>
+          <small>Gestão escolar</small>
+        </span>
+      </a>
+      <nav class="nav-tabs" aria-label="Navegação principal">
+        <a href="#admin" id="adminLink" class="nav-link active">Gerenciar</a>
+        <a href="#tv" id="tvLink" class="nav-link">Tela da TV</a>
+      </nav>
+    </header>
+    <main id="adminView" class="page">
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">ADMINISTRAÇÂO CNA</p>
+          <h1>Distribuição de turmas</h1>
+          <p class="muted">Organize salas, professores, horários e turmas em um só lugar.</p>
+        </div>
+        <a class="button button-dark" href="#tv" target="_blank" rel="noopener"> Abrir tela da TV</a>
+      </section>
+      <section class="stats" aria-label="Resumo">
+        <article class="stat-card">
+          <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
+            <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+          </svg>
+        </span>
+          <div>
+            <span class="stat-label">Turmas cadastradas</span>
+            <strong id="totalClasses">0</strong>
+          </div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">⌂</span>
+          <div>
+            <span class="stat-label">Salas ocupadas</span>
+            <strong id="totalRooms">0</strong>
+          </div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">♙</span>
+          <div>
+            <span class="stat-label">Alunos distribuídos</span>
+            <strong id="totalStudents">0</strong>
+          </div>
+        </article>
+      </section>
+      <section class="content-grid">
+        <article class="panel form-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">CADASTRO</p>
+              <h2 id="formTitle">Adicionar turma</h2>
+             </div>
+             <span class="heading-icon">+</span>
+          </div>
+          <form id="classForm">
+            <input type="hidden" id="classId">
+            <label for="floor">Andar</label>
+            <select id="floor" required>
+              <option value="">Selecione o andar</option>
+              <option>Térreo</option>
+              <option>1º</option>
+              <option>2º</option>
+              <option>3º</option>
+              <option>4º</option>
+              <option>5º</option>
+              <option>Outro</option>
+            </select>
+            <div class="form-row">
+              <div>
+                <label for="room">Sala</label>
+                <input id="room" placeholder="Ex.: 05" required maxlength="20">
+              </div>
+           </div> 
+              <label for="students">Nº de alunos</label>
+          </div>
+      </section>
+          
+          
+  </body>
