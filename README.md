@@ -8,7 +8,7 @@ Sistema web desenvolvido para organizar a distribuição de turmas, professores 
 
 Confira o **Sala Certa CNA** diretamente pelo navegador:
 
-🔗 [Clique aqui para acessar o sistema Sala Certa CNA](https://ctrlplaysantiago.github.io/sala-certa-cna/)
+🔗 [Clique aqui para acessar o sistema](https://ctrlplaysantiago.github.io/sala-certa-cna/)
 
 
 ## Funcionalidades
